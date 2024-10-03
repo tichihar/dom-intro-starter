@@ -29,3 +29,19 @@ let svgs = document.querySelectorAll("#svgs svg");
 for(let i = 0; i < 5; i++) {
     svgs[i].style.stroke = colors[i];
 }
+
+//change the first 
+document.querySelector("#query .bold").style.color = "#7C9EA6";
+
+// working with the list in the change section
+let list = document.querySelector("#change .content_list");
+console.log(list);
+
+// replace text in first li
+list.children[0].textContent = "This is new list item text";
+
+//add name to third li
+list.children[2].innerHTML = "<strong>Takemi Ichihara</strong>";
+
+//remove hidden attribute from paragraph
+document.querySelector("#remove a").removeAttribute("hidden");
